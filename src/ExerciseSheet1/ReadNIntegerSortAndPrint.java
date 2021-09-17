@@ -3,8 +3,8 @@ package ExerciseSheet1;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
-public class ReadNInteger {
+public class ReadNIntegerSortAndPrint {
+	
 
 	private static Scanner reader = new Scanner(System.in);
 	public static void main(String[] args) {
@@ -21,11 +21,14 @@ public class ReadNInteger {
 		for (int i =0 ; i < numbers; i++) {
 			int next = i+1;
 			System.out.println("what's number " +next + " ?");
-			 reader.nextInt();
-			listOfNumers[i] = reader.nextInt();
-			
+			listOfNumers[i] =  reader.nextInt();
+			Arrays.sort(listOfNumers);
 			
 		}
-		System.out.print(" " + Arrays.toString(listOfNumers));
-}
+		
+			System.out.print(" "+ Arrays.toString(listOfNumers));
+		
+	}
+
+
 }
